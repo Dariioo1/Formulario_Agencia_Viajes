@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="agenciaviajes.css">
+</head>
+
+<body>
+    <section>
+        <h2>CITIAIR TRAVEL</h2>
+    
+        <p>Contacta con nosotros</p>
+    </section>
+    
+    <form method="get" action="">
+        <div class="nombre">
+        <label for="name">Nombre:</label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required size="21px">
+        </div>
+    
+        <div class="apellidos">
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos" required size="21px">
+        </div>
+
+        <div class="telefono">
+            <label for="Telefono">Telefono:</label>
+            <input type="tel" name="Telefono" placeholder="Telefono" required size="21px" id="Telefono">        
+        </div>
+
+        <div class="email">
+            <label for="Email">Email:</label>
+            <input type="text" name="Email" id="Email" placeholder="Introduzca su email" required size="21px">
+        </div>
+
+        <div class="fecha">
+       <label for="Fecha">Fecha de salida:</label>
+       <input type="date" name="Fecha" required id="fechaSalida">
+        </div>
+
+        <div class="vuelta">
+            <label for="Vuelta" id="FechaVuelta">Fecha de Vuelta:</label>
+            <input type="date" name="Vuelta" required id="fechaVuelta">
+        </div>
+        
+   
+        <label for="Ciudades" class="destino">Destino:</label>
+            <select name="Ciudades" id="Ciudades">
+                <option disabled= "">selecciona tu viaje</option>
+                <option value = "Galicia">Galicia</option>
+                <option value = "Canaria"> Canarias</option>
+                <option value = "Mallorca"> Mallorca</option>
+            </select>
+        
+        <div class="adultos">
+            <label for="Adultos">Numero de Personas:</label>
+            <select required id="numero">
+                <option selected class="seleccionado">Selecciona...</option>
+                <option class="numeros">1</option>
+                <option class="numeros">2</option>
+                <option class="numeros">3</option>
+                <option class="numeros">4</option>
+                <option class="numeros">5</option>
+                <option class="numeros">6</option>
+                <option class="numeros">7</option>
+                <option class="numeros">8</option>
+                <option class="numeros">9</option>
+                <option class="numeros">10</option>
+                <option class="numeros">Mas de 10</option>
+            </select>
+        </div>
+
+
+        <div class="Aerolinea">
+            <label for="Aerolinea" class="aerolinea2">Aerolinea:</label>
+            <select size="4" required id="aerolinea3">
+            <optgroup label="Seleccione" class="seleccionar">
+                <option label="Iberia" class="aerolinea">Iberia</option>
+                <option label="Vueling Airlines" class="aerolinea">Vueling Airlines</option>
+                <option label="Wamos Air" class="aerolinea">Wamos Air</option>
+                <option label="España States" class="aerolinea">España States</option>
+            </select>
+            </optgroup>
+        </div>
+
+        <div class="informacion">
+            <label for="Informacion" class="informacion2">Informacion Adicional:</label>
+            <textarea rows="5" cols="30px" id="Comentario"></textarea>
+        </div>
+
+        <div class="politicas">
+            <label for="Politicas">Estoy de acuerdo con los Terminos de Uso y Politicas de Privacidad</label>
+            <br><input type="checkbox" class="politicas2" id="Politicas">Estoy de acuerdo
+        </div>
+
+        <div class="boton">
+            <button class="boton2" type="button" onclick= "datos()">Solicite su viaje</button>
+        </div>
+        <label for="buscar" class="destino">Destino:</label>
+        <select name="buscar" id="buscar">
+            <option disabled= "">selecciona tu viaje</option>
+            <option value = "Galicia">Galicia</option>
+            <option value = "Canaria"> Canarias</option>
+            <option value = "Mallorca"> Mallorca</option>
+        </select>
+
+        <div class="viaje">
+            <button type="button" class ="boton3" onclick="agenciaViaje()">Confirmacion Viaje</button>
+        </div>
+    </form>
+
+
+        
+    <nav class="contacto">
+        <a href="https://www.google.com/maps" target="_black">Dirección: Arturo Soria</a>
+        <a href="https://onedrive.live.com/about/es-es/signin/" target="_black">Email: dariopaucar@outlook.es</a>
+        <a href="numero.com" target="_black">Telefono: 66666666</a> 
+    </nav>
+
+    <script src="agencia.js"></script>
+</body>
+</html>
