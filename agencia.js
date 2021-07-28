@@ -41,6 +41,17 @@ console.log(arrayJson);
 alert (JSON.stringify(arrayJson))
 }
 
+function agenciaViaje()
+{
+    for(let i =0; datos.length;i++)
+    {
+        if(datos[i] === Ciudades)
+        {
+
+        }
+
+    } 
+}
 
 
 
