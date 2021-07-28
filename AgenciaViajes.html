@@ -99,16 +99,19 @@
         <div class="boton">
             <button class="boton2" type="button" onclick= "datos()">Solicite su viaje</button>
         </div>
-        <label for="buscar" class="destino">Destino:</label>
-        <select name="buscar" id="buscar">
-            <option disabled= "">selecciona tu viaje</option>
+    </form>
+
+        <form method="" action="">
+        <label for="filtrar" class="destino">Destino:</label>
+        <select name="filtrar" id="filtrar">
+            <option disabled= "">Selecciona tu viaje</option>
             <option value = "Galicia">Galicia</option>
             <option value = "Canaria"> Canarias</option>
             <option value = "Mallorca"> Mallorca</option>
         </select>
 
         <div class="viaje">
-            <button type="button" class ="boton3" onclick="agenciaViaje()">Confirmacion Viaje</button>
+            <button type="button" class ="boton3" onclick="filtrarViaje()">Confirmacion Viaje</button>
         </div>
     </form>
 
