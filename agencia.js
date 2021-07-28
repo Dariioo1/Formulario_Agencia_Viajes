@@ -40,7 +40,23 @@ alert (JSON.stringify(arrayJson))
 }
 
 
+function filtrarViaje()
+{
+    let comprobar= [];
+    let value = document.getElementById("filtrar").value
+    for(let i=0; i<arrayJson.length;i++)
+    {
+        if((arrayJson[i].Ciudades) == value)
+        {
+            comprobar.push(arrayJson[i]);
+            
+        }
 
+    };
+
+    console.log(comprobar);
+    alert (JSON.stringify(comprobar))
+}
 
 
 
